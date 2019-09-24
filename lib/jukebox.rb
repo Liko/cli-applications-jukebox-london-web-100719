@@ -22,7 +22,9 @@ def play(songs)
   puts("Please enter a song name or number:")
   user_input = gets.strip
   
-  if user_input.includes?
+  if songs.include?(user_input) || (user_input > 0 && user_input < songs.length + 1)
+  
+  end
 end 
 
 def list(songs)
