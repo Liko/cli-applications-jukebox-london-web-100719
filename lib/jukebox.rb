@@ -56,5 +56,6 @@ def run
     elsif user_input == "list"
       list(songs)
     end
+  end
 
 end
