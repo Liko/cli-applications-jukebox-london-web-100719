@@ -50,13 +50,12 @@ def run(songs)
     exit
   elsif user_input == "play"
     play(songs)
-    run(songs)
   elsif user_input == "help"
     help
-    run(songs)
   elsif user_input == "list"
     list(songs)
-    run(songs)
   end
+  
+  run(songs)
 
 end
