@@ -18,18 +18,18 @@ def help
   puts("- exit : exits this program")
 end 
 
-# def play(songs)
-#   puts("Please enter a song name or number:")
-#   user_input = gets.strip
+def play(songs)
+  puts("Please enter a song name or number:")
+  user_input = gets.strip
   
-#   if songs.include?(user_input) 
-#     puts("Playing #{user_input}")
-#   elsif user_input > 0 && user_input < songs.length + 1
-#     puts("Playing #{songs[user_input+1}")
-#   else 
-#     puts("Invalid input, please try again")
-#   end
-# end 
+  if songs.include?(user_input) 
+    puts("Playing #{user_input}")
+  elsif user_input > 0 && user_input < songs.length + 1
+    puts("Playing #{songs[user_input+1}")
+  else 
+    puts("Invalid input, please try again")
+  end
+end 
 
 def list(songs)
   songs.each_with_index do |song, index|
