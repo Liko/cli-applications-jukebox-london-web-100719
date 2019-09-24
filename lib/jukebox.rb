@@ -48,6 +48,7 @@ def run
   while true do 
     if user_input == "exit"
       exit_jukebox
+      break
      user_input == "play"
       play(songs)
     elsif user_input == "help"
