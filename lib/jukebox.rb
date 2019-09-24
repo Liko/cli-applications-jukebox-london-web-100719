@@ -42,5 +42,5 @@ def exit_jukebox
 end
 
 def run 
-  play(songs)
+  help
 end
