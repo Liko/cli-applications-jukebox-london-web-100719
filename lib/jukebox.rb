@@ -25,7 +25,7 @@ def play(songs)
   if songs.include?(user_input) 
     puts("Playing #{user_input}")
   elsif (user_input.to_i > 0 && user_input.to_i < (songs.length + 1))
-    puts("Playing #{songs[user_input+1]}")
+    puts("Playing #{songs[user_input+1.to_i]}")
   else 
     puts("Invalid input, please try again")
   end
